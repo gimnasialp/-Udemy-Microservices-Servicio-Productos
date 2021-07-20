@@ -19,6 +19,17 @@ public class Producto implements Serializable {  //para convertir en bits, sirve
     @Temporal(TemporalType.DATE)  //tipo de tiempo (date, fecha año mes dia)
     private Date createAt;
 
+    @Transient
+    private Integer port;
+
+    public Integer getPort() {
+        return port;
+    }
+
+    public void setPort(Integer port) {
+        this.port = port;
+    }
+
     public Long getId() {
         return id;
     }
