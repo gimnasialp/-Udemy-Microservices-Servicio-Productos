@@ -34,8 +34,8 @@ public class ProductoController {
     @GetMapping("/ver/{id}")
     public Producto detalle(@PathVariable  Long id){
         Producto producto = productoService.findById(id);
-        //producto.setPort(Integer.parseInt(env.getProperty("server.port")));
-        producto.setPort(port);
+        producto.setPort(Integer.parseInt(env.getProperty("server.port")));
+        //producto.setPort(port);
 
         /*try {
             Thread.sleep(2000L);
