@@ -37,11 +37,11 @@ public class ProductoController {
         producto.setPort(Integer.parseInt(env.getProperty("server.port")));
         //producto.setPort(port);
 
-        /*try {
+        try {
             Thread.sleep(2000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
         return  producto;
     }
 
